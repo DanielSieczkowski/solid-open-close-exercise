@@ -1,6 +1,6 @@
 package caculator;
 
-public class Addition {
+public class Addition implements CalculatorOperation{
     private double left;
     private double right;
     private double result = 0.0;
@@ -32,5 +32,9 @@ public class Addition {
 
     public void setResult(double result) {
         this.result = result;
+    }
+
+    public void perform() {
+        result = left + right;
     }
 }

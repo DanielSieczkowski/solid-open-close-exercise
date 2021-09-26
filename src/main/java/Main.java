@@ -8,9 +8,7 @@ public class Main {
         Addition addition = new Addition(1,2);
         Subtraction subtraction = new Subtraction(1,2);
 
-        calculator.addition(addition);
+        calculator.calculate(addition);;
         System.out.println(addition.getResult());
-        calculator.subtraction(subtraction);
-        System.out.println(subtraction.getResult());
     }
 }
